@@ -19,10 +19,11 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to top right, rgba(23, 54, 84, 0.3), rgba(110, 243, 197, 0.4)), url(./images/adv2.jpg);
+  background-image: linear-gradient(to top right, rgba(23, 53, 84, 0.308), rgba(110, 243, 197, 0.4)), url(./images/adv2.jpg);
   background-size: cover;
   background-position: center;
-  clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%); }
+  clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%); 
+}
 
 .heading-primary {
   color: #fff;
@@ -44,13 +45,8 @@ body {
   font-weight: 400;
   animation-name: moveInLeft;
   animation-duration: 2s;
-  animation-timing-function: ease-out; }
-
-.header__text-box {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
+  animation-timing-function: ease-out; 
+}
 
 @keyframes moveInLeft {
   0% {
@@ -92,7 +88,7 @@ body {
   padding: 1rem 4rem;
   border-radius: 30px;
   background: white;
-  border: 2px solid white;
+  border: 4px solid white;
   transition: all .3s;
   position: relative;
   animation: comeUp 1s ease-out 1s;

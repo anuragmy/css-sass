@@ -26,13 +26,20 @@ body {
     background-size: cover;
     background-position: center;
     clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+
+    
 }
+
+
 
 .heading-primary {
     color: #fff;
     text-transform: uppercase;
     text-align: center;
     backface-visibility: hidden;
+
+    
+    
 }
 
 .heading-primary--sub {
@@ -53,12 +60,8 @@ body {
     animation-timing-function: ease-out;
 }
 
-.header__text-box {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+
+
 
 @keyframes moveInLeft {
     0% {
@@ -111,7 +114,7 @@ body {
     padding: 1rem 4rem;
     border-radius: 30px;
     background: white;
-    border: 2px solid white;
+    border: 4px solid white;
     transition: all .3s;
     position: relative;
     animation: comeUp 1s ease-out 1s;
