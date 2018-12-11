@@ -1,12 +1,10 @@
-*,
-*::after,
-*::before {
+* {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: border-box; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 10px; }
 
 body {
   font-family: 'Lato', sans-serif;
@@ -14,39 +12,22 @@ body {
   font-size: 2.6rem;
   line-height: 1.7;
   color: lightseagreen;
-  padding: 3rem;
-  box-sizing: border-box; }
+  padding: 3rem; }
 
 .header {
   height: 95vh;
   background-image: linear-gradient(to top right, rgba(23, 53, 84, 0.308), rgba(110, 243, 197, 0.4)), url(./images/adv2.jpg);
   background-size: cover;
   background-position: center;
-  clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%); 
-}
+  clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%); }
 
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
   text-align: center;
   backface-visibility: hidden; }
-
-.heading-primary--sub {
-  display: block;
-  font-size: 2rem;
-  letter-spacing: 1.8rem;
-  font-weight: 200;
-  animation: moveInRight 2s ease-in-out; }
-
-.heading-primary--main {
-  display: block;
-  font-size: 6rem;
-  letter-spacing: 3.5rem;
-  font-weight: 400;
-  animation-name: moveInLeft;
-  animation-duration: 2s;
-  animation-timing-function: ease-out; 
-}
+  .heading-primary-main {
+    font-weight: 30px; }
 
 @keyframes moveInLeft {
   0% {
@@ -105,7 +86,7 @@ body {
   z-index: -1;
   border-radius: 3rem; }
 
-.btn--white::after {
+.btn-white::after {
   background: white; }
 
 .btn:active::after {
