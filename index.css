@@ -66,10 +66,34 @@ body {
   -webkit-background-clip: text;
   transition: all .3s; }
   .heading-secondary:hover {
-    transform: skewX(-20deg) skewY(-1deg); }
+    transform: skewX(-20deg) skewY(-4deg); }
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left; }
+
+.paragraph {
+  font-size: 1.6rem;
+  color: black;
+  text-align: left;
+  letter-spacing: .1rem;
+  font-family: Montserrat; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
 
 .u-center-text {
   text-align: center; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+.u-margin-bottom-meium {
+  margin-bottom: 4rem; }
 
 .section-about {
   background-color: #f1f1f1;
@@ -131,6 +155,52 @@ body {
   padding: 10px 50px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0); }
 
+.btn-text:link, .btn-text:visited {
+  color: #208122;
+  display: inline-block;
+  text-transform: capitalize;
+  text-decoration: none;
+  border-bottom: 0.1rem solid #208122;
+  padding: 4px 5px;
+  font-size: 1.6rem;
+  transition: all .4s; }
+
+.btn-text:hover {
+  background-color: #208122;
+  transition: all .4s;
+  color: white;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  transition: all .4s;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
+  transform: translateY(0); }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 55%;
+    box-shadow: 1rem 3rem 7rem rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all .4s; }
+    .composition__photo--p1 {
+      top: -2rem;
+      left: 0; }
+    .composition__photo--p2 {
+      right: 0;
+      top: 4rem; }
+    .composition__photo--p3 {
+      top: 14rem;
+      left: 11%; }
+    .composition__photo:hover {
+      transform: scale(1.2);
+      z-index: 20;
+      transition: all .3s;
+      box-shadow: 1rem 3rem 10rem rgba(0, 0, 0, 0.3); }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to top right, rgba(23, 54, 84, 0.6), rgba(40, 180, 131, 0.4)), url(./images/adv2.jpg);
@@ -170,14 +240,18 @@ body {
   clear: both; }
 
 .row {
-  background-color: red;
-  text-align: center;
+  text-align: left;
   max-width: 116rem;
-  margin: 0 auto;
-  margin-top: 10rem; }
-  .row [class^="col-"] {
-    background-color: green;
+  margin: 0 auto; }
+  .row .col-1 {
+    background-color: transparent;
     float: left;
-    width: calc((100% - 2 * 6rem) / 3); }
-    .row [class^="col-"]:not(last-child) {
+    width: calc((100% - 6rem) / 2); }
+    .row .col-1:not(last-child) {
+      margin-right: 10px; }
+  .row .col-2 {
+    background-color: transparent;
+    float: right;
+    width: calc((100% - 6rem) / 2); }
+    .row .col-2:not(last-child) {
       margin-right: 10px; }

@@ -1,0 +1,31 @@
+@include clearfix;
+
+.row {
+    
+    text-align: left;
+    max-width: $grid-width;
+    margin: 0 auto;
+    
+
+    .col-1 {
+        background-color:transparent;
+        float:left;
+        width: calc((100% - #{$gutter-horizontal}) / 2);
+        &:not(last-child) {
+            margin-right:10px;
+        }
+
+    }
+    .col-2 {
+        background-color:transparent;
+        float:right;
+        width: calc((100% - #{$gutter-horizontal}) / 2);
+        &:not(last-child) {
+            margin-right:10px;
+        }
+
+    }
+
+
+    
+}
