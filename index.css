@@ -198,8 +198,11 @@ body {
     .composition__photo:hover {
       transform: scale(1.2);
       z-index: 20;
-      transition: all .3s;
+      transition: all .5s;
       box-shadow: 1rem 3rem 10rem rgba(0, 0, 0, 0.3); }
+  .composition:hover .composition__photo:not(:hover) {
+    filter: blur(2px);
+    transform: scale(0.9); }
 
 .header {
   height: 95vh;

@@ -29,9 +29,15 @@
             &:hover {
                 transform: scale(1.2);
                 z-index: 20;
-                transition: all .3s;
+                transition: all .5s;
                 //outline: .5rem solid #208122;
                 box-shadow: 1rem 3rem 10rem rgba(0, 0, 0, 0.3);
             }
+
+            
+        }
+        &:hover &__photo:not(:hover) {
+            filter: blur(2px);
+            transform: scale(.9);
         }
     }
