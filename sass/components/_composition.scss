@@ -39,5 +39,6 @@
         &:hover &__photo:not(:hover) {
             filter: blur(2px);
             transform: scale(.9);
+
         }
     }
