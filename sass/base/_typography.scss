@@ -19,6 +19,7 @@ body {
     color: transparent;
     -webkit-background-clip: text;
     transition: all .3s;
+    margin-bottom: 2rem;
 
     &:hover {
         transform: skewX(-20deg) skewY(-4deg);
@@ -29,6 +30,7 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     text-align: left;
+    
 }
 
 .paragraph {
