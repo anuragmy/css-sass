@@ -256,13 +256,25 @@ body {
     transform: translateY(-2rem); }
 
 .card {
-  height: 50rem;
   perspective: 150rem;
-  -moz-perspective: 150rem;
-  background-color: orangered;
-  transition: all 1s; }
-  .card:hover {
+  -moz-perspective: 150rem; }
+  .card__side {
+    transition: all 1s;
+    height: 40rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    width: 100%; }
+    .card__side--front {
+      background-color: greenyellow; }
+    .card__side--back {
+      background-color: pink;
+      transform: rotateY(180deg); }
+  .card:hover .card__side--front {
     transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0deg); }
 
 .header {
   height: 95vh;
