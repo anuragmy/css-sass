@@ -257,9 +257,10 @@ body {
 
 .card {
   perspective: 150rem;
-  -moz-perspective: 150rem; }
+  -moz-perspective: 150rem;
+  height: 40rem; }
   .card__side {
-    transition: all 1s;
+    transition: all 1s ease;
     height: 40rem;
     position: absolute;
     top: 0;
@@ -267,10 +268,15 @@ body {
     backface-visibility: hidden;
     width: 100%; }
     .card__side--front {
-      background-color: greenyellow; }
+      background-color: white; }
     .card__side--back {
-      background-color: pink;
       transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background: linear-gradient(to bottom right, #ffb900, #ff7730); }
+      .card__side--back-2 {
+        background: linear-gradient(to bottom right, #2998ff, #5643fa); }
+      .card__side--back-3 {
+        background: linear-gradient(to bottom right, #7ed56f, #28b485); }
   .card:hover .card__side--front {
     transform: rotateY(180deg); }
   .card:hover .card__side--back {
