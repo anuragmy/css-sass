@@ -91,6 +91,14 @@
             background-image: linear-gradient(to right,rgba(118, 88, 22, 0.7    ),rgba(169, 142, 72, 0.3));
 
         }
+        &--3 {
+            background-image: linear-gradient(to right,rgba(113, 153, 206, 0.54),rgba(11, 50, 134, 0.54));
+
+        }
+        &--2 {
+            background-image: linear-gradient(to right,rgba(58, 123, 118, 0.54),rgba(91, 167, 196, 0.54));
+
+        }
     }
 
     &__details {
@@ -110,5 +118,30 @@
             }
 
         }
+    }
+
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 90%;
+        text-align: center;
+    }
+
+    &__price-box {
+        text-align: center;
+        color:white;
+        margin-bottom: 2rem;
+    }
+
+    &__price-only {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    &__price-value {
+        font-size: 6rem;
+        font-weight: 100;
     }
 }

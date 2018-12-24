@@ -58,6 +58,18 @@
       
     }
 
+    &-green {
+        background-color: #305C4A;
+       &::after {
+            background: #305C4A;
+          
+    
+    
+    
+        }
+      
+    }
+
     
 
     &:active {
@@ -102,5 +114,17 @@
         box-shadow: 0 .5rem 2rem rgba(0,0,0,0.3);
         transform: translateY(0);
 
+    }
+}
+
+.button {
+    background-color: white;
+    color:black;
+    border-radius: 10rem;
+    margin-top: 1rem;   
+    cursor: pointer;
+
+    & .-green {
+        background-color: #208122;
     }
 }
