@@ -1,6 +1,6 @@
 .story {
     background-color: whitesmoke;
-    padding:6rem;
+    padding:3rem;
     box-shadow: 0 3rem 6rem rgba(0,0,0,0.6);
     border-radius: .1rem;
     width: 75%;
@@ -21,13 +21,38 @@
         -webkit-shape-outside: circle(50% at 50% 50%);
         clip-path: circle(34% at 50% 50%);
         transform: translateX(-4rem) skewX(6deg);
+        margin:0 auto;
+        position: relative;
+        
 
-
+        
     }
     
+    &__caption {
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,20%);
+        font-size: 1.6rem;
+        opacity: 0;
+        color: white;
+        transition: all .5s;
+        backface-visibility: hidden;
+    }
+
     &__text {
+       font-size: 1.8rem;
+
+    }
+
+    &:hover &__caption {
+        opacity: 1;
+       transform: translate(-50%,-50%); 
        
-        
+    }
+
+    &:height &__shape {
+        transform: scale(1.1);
     }
    
 }
