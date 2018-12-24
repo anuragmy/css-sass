@@ -12,13 +12,15 @@
         left: 0;
         backface-visibility: hidden;
         width:100%;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba(black,0.4); 
 
         &--front {
             background-color: white;
         }
 
         &--back {
-            transform: rotateY(180deg);
+            transform: rotateY(-180deg);
             &-1 {
                 background: linear-gradient(to bottom right,$color-card-1-1,$color-card-1-2 );
             }
@@ -38,6 +40,25 @@
 
     &:hover &__side--back {
         transform: rotateY(0deg);
+    }
+
+    &__picture {
+        background-blend-mode: screen;
+        background-size: cover;
+        height: 18rem;
+        
+       &-1 {
+            background-image: linear-gradient(to bottom,$color-card-1-1,$color-card-1-2),url('../../images/nat-3.jpg');
+        }
+
+        &-2 {
+            background-image: linear-gradient(to bottom,$color-card-2-1,$color-card-2-2),url('../../images/nat-4.jpg');
+        }
+
+        &-3 {
+            background-image: linear-gradient(to bottom,$color-card-3-1,$color-card-3-2),url('../../images/nat-7.jpg');
+        }
+       
     }
 }
 
