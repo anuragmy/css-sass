@@ -126,6 +126,11 @@ body {
     max-width: 116rem;
     margin: 0 auto; }
 
+.section-stories {
+  padding: 15rem 0;
+  background-color: #f1f1f1;
+  transform: translateY(-20rem); }
+
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -357,6 +362,26 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
+
+.story {
+  background-color: whitesmoke;
+  padding: 6rem;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.6);
+  border-radius: .1rem;
+  width: 75%;
+  margin: 0 auto;
+  transform: skewX(-6deg); }
+  .story > * {
+    transform: skewX(6deg); }
+  .story__shape {
+    height: 15rem;
+    width: 15rem;
+    background: url(../../images/nat-8.jpg) center center;
+    background-size: cover;
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(34% at 50% 50%);
+    transform: translateX(-4rem) skewX(6deg); }
 
 .header {
   height: 95vh;
